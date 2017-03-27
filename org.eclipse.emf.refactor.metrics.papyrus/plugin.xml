@@ -14,10 +14,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="true"
-            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
-         <menu
-               id="org.eclipse.emf.refactor.runtime.menu"
-               label="EMF Quality Assurance (use existing techniques)">
+            locationURI="popup:org.eclipse.emf.refactor.runtime.menu">
             <command
                   commandId="org.eclipse.emf.refactor.metrics.papyrus.calculateMetricsOnElementCommand"
                   icon="icons/metric.PNG"
@@ -33,6 +30,9 @@
                      	</instanceof>
                      	<instanceof
                            value="org.eclipse.emf.facet.infra.browser.uicore.internal.model.ModelElementItem">
+                     	</instanceof>
+                     	<instanceof
+                     	  value="org.eclipse.papyrus.emf.facet.custom.metamodel.v0_2_0.internal.treeproxy.impl.EObjectTreeElementImpl">
                      	</instanceof>
                      </or>
                   </iterate>
@@ -54,14 +54,17 @@
                      	<instanceof
                            value="org.eclipse.emf.facet.infra.browser.uicore.internal.model.ModelElementItem">
                      	</instanceof>
+                     	<instanceof
+                     	  value="org.eclipse.papyrus.emf.facet.custom.metamodel.v0_2_0.internal.treeproxy.impl.EObjectTreeElementImpl">
+                     	</instanceof>
                      </or>
                   </iterate>
                </visibleWhen>
             </command>
-         </menu>
-         <menu
-               id="org.eclipse.emf.refactor.generator.menu"
-               label="EMF Quality Assurance (define new techniques)">
+         </menuContribution>
+         <menuContribution
+            allPopups="true"
+            locationURI="popup:org.eclipse.emf.refactor.generator.menu">   
             <command
                   commandId="org.eclipse.emf.refactor.metrics.papyrus.generateNewMetricJavaCommand"
                   icon="icons/metric.PNG"
@@ -102,7 +105,6 @@
                   </iterate>
                </visibleWhen>
             </command>
-         </menu>
       </menuContribution>
    </extension>
    <extension

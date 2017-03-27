@@ -11,5 +11,5 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.refactor.metrics;bundle-version="0.7.0",
  org.eclipse.emf.refactor.metrics.runtime;bundle-version="0.7.0",
  org.eclipse.birt.report.engine;bundle-version="4.2.1"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

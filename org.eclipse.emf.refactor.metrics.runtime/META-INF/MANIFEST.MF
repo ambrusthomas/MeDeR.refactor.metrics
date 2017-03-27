@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.refactor.metrics.configuration;bundle-version="0.7.0",
  org.eclipse.core.resources;bundle-version="3.8.0"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.eclipse.emf.refactor.metrics.runtime.core,
  org.eclipse.emf.refactor.metrics.runtime.managers,
  org.eclipse.emf.refactor.metrics.runtime.ui

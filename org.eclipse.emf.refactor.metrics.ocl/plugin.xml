@@ -16,10 +16,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="true"
-            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
-         <menu
-               id="org.eclipse.emf.refactor.generator.menu"
-               label="EMF Quality Assurance (define new techniques)">
+            locationURI="popup:org.eclipse.emf.refactor.generator.menu">
             <command
                   commandId="org.eclipse.emf.refactor.metrics.henshin.generateNewMetricOCLCommand"
                   icon="icons/metric.PNG"
@@ -35,7 +32,6 @@
                   </iterate>
                </visibleWhen>
             </command>
-         </menu>
       </menuContribution>
    </extension>
    <extension
